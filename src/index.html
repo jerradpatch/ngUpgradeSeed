@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TestApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="angularJSApp/app/bower_components/angular/angular.js"></script>
+  <script src="angularJSApp/app/bower_components/angular-route/angular-route.js"></script>
+  <!-- angular rewrite URL, remove after app transitioned -->
+
+
+  <!-- end -->
+  <script src="angularJSApp/app/app.js"></script>
+  <script src="angularJSApp/app/providers/rewriteTemplateUrlsHack.js"></script>
+  <script src="angularJSApp/app/view1/view1.js"></script>
+  <script src="angularJSApp/app/view2/view2.js"></script>
+  <script src="angularJSApp/app/components/version/version.js"></script>
+  <script src="angularJSApp/app/components/version/version-directive.js"></script>
+  <script src="angularJSApp/app/components/version/interpolate-filter.js"></script>
+
+</head>
+<body ng-href="angularJSApp/app">
+
+<ul class="menu">
+  <li><a href="#!/view1">view1</a></li>
+  <li><a href="#!/view2">view2</a></li>
+</ul>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+<div>Angular seed app: v<span app-version></span></div>
+
+</body>
+</html>
