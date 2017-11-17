@@ -5,8 +5,11 @@ This is a seed repo for upgrading from angular 1 to 2+, It combines angular-cli 
 - https://github.com/angular/angular-seed
 
 ## Notes:
-- please note the hack that was added for angularJS templateUrl rewriting. It's a hack because it has to be placed before any
-components but after the routing dependency.
+- please note the hack that was added for angularJS templateUrl rewriting. 
+
+https://github.com/jerradpatch/ngUpgradeSeed/blob/master/src/angularJSApp/app/providers/rewriteTemplateUrlsHack.js
+
+It's a hack because it has to be placed before any components but after the routing dependency.
 
 In order to use this update the BASEPATH var to 'base/path/to/app.js'. In the default case its 'angularJSApp/app/'.
 
