@@ -4,13 +4,13 @@ This is a seed repo for upgrading from angular 1 to 2+, It combines angular-cli 
 - https://github.com/angular/angular-cli
 - https://github.com/angular/angular-seed
 
-##Notes:
+## Notes:
 - please note the hack that was added for angularJS templateUrl rewriting. It's a hack because it has to be placed before any
 components but after the routing dependency.
 
 In order to use this update the BASEPATH var to 'base/path/to/app.js'. In the default case its 'angularJSApp/app/'.
 
-###Angular cli needs to be installed globally
+### Angular cli needs to be installed globally
 npm install -g @angular/cli
 
 # README for Angular-cli follows
