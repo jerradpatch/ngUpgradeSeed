@@ -10,7 +10,8 @@ components but after the routing dependency.
 
 In order to use this update the BASEPATH var to 'base/path/to/app.js'. In the default case its 'angularJSApp/app/'.
 
-
+###Angular cli needs to be installed globally
+npm install -g @angular/cli
 
 # README for Angular-cli follows
 
