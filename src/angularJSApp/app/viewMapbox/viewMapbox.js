@@ -15,7 +15,46 @@ angular.module('myApp.MapBox1', ['ngRoute'])
 
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9'
+    style: {
+      "version": 8,
+      "name": "Mapbox Streets",
+      "sprite": "mapbox://sprites/mapbox/streets-v8",
+      "sources": {
+        "mapbox-streets": {
+          "type": "vector",
+          "url": "mapbox://mapbox.mapbox-streets-v6"
+        }
+      },
+      "layers": [
+        {
+          "id": "water",
+          "source": "mapbox-streets",
+          "source-layer": "water",
+          "type": "fill",
+          "paint": {
+            "fill-color": "#000000"
+          }
+        },
+        {
+          "id": "building",
+          "source": "mapbox-streets",
+          "source-layer": "building",
+          "type": "fill-extrusion",
+          "paint": {
+            "fill-extrusion-color": "#FF0000"
+          }
+        },
+        {
+          "id": "landuse_overlay",
+          "source": "mapbox-streets",
+          "source-layer": "landuse_overlay",
+          "type": "fill",
+          "paint": {
+            "fill-color": "#0000FF"
+          }
+        }
+      ]
+    }
   });
 
 }]);
