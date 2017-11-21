@@ -6,6 +6,7 @@ var module = angular.module('myApp', [
   'rewriteTemplateUrlsHack',
   'myApp.view1',
   'myApp.view2',
+  'myApp.MapBox1',
   'myApp.version'
 ]);
 

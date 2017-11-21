@@ -6,18 +6,24 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--TODO, content security policy, https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP-->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">-->
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!--TODO, mapbox content security policy, https://www.mapbox.com/mapbox-gl-js/api/-->
+  <script src="angularJSApp/app/globalJs/mapbox-gl.js"></script>
 
   <script src="angularJSApp/app/bower_components/angular/angular.js"></script>
   <script src="angularJSApp/app/bower_components/angular-route/angular-route.js"></script>
-  <!-- angular rewrite URL, remove after app transitioned -->
 
-
-  <!-- end -->
   <script src="angularJSApp/app/app.js"></script>
   <script src="angularJSApp/app/providers/rewriteTemplateUrlsHack.js"></script>
   <script src="angularJSApp/app/view1/view1.js"></script>
   <script src="angularJSApp/app/view2/view2.js"></script>
+  <script src="angularJSApp/app/viewMapbox/viewMapbox.js"></script>
   <script src="angularJSApp/app/components/version/version.js"></script>
   <script src="angularJSApp/app/components/version/version-directive.js"></script>
   <script src="angularJSApp/app/components/version/interpolate-filter.js"></script>
@@ -28,6 +34,7 @@
 <ul class="menu">
   <li><a href="#!/view1">view1</a></li>
   <li><a href="#!/view2">view2</a></li>
+  <li><a href="#!/MapBox1">mapbox</a></li>
 </ul>
 
 <!--[if lt IE 7]>
