@@ -43,3 +43,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# Building Docker dev image
+1) install docker CE
+2) setup docker DNS to gov dns
+-- run "sudo nano /etc/docker/daemon.json"
+-- add this:
+```json
+{
+"dns": ["148.129.129.22", "148.129.75.22"]
+}
+```
+3) from code directory execute
+```bash
+sudo docker build -t dev-env .
+```
