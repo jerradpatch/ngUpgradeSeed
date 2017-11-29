@@ -61,3 +61,8 @@ sudo docker build -t dev-env .
 ```
 -- if debugging is needed: login to the running container 
   sudo docker exec -it dev-env /bin/bash
+  
+  
+## Note on testing
+why use both karma and protractor?
+https://stackoverflow.com/questions/17070522/can-protractor-and-karma-be-used-together/29619467#29619467

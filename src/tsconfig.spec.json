@@ -6,8 +6,7 @@
     "module": "commonjs",
     "target": "es5",
     "types": [
-      "jasmine",
-      "node"
+      "jasmine"
     ]
   },
   "files": [
@@ -16,5 +15,8 @@
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
+  ],
+  "exclude": [
+    "./angularJSApp/**/*"
   ]
 }
