@@ -59,3 +59,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```bash
 sudo docker build -t dev-env .
 ```
+-- if debugging is needed: login to the running container 
+  sudo docker exec -it dev-env /bin/bash

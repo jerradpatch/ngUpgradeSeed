@@ -2,13 +2,18 @@
   "name": "test-app",
   "version": "0.0.0",
   "license": "MIT",
+  "config" : {
+    "dockerCommon" : "docker run --mount type=volume,src=${pwd},dst=/code -d dev-env "
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    ".up": "sudo docker run -it --network='host' -p 8080:8080 -v $(pwd):/code --name dev-env -d dev-env",
+    ".s":"sudo docker exec -it dev-env bash -lc 'ng serve --port 8080'"
   },
   "private": true,
   "dependencies": {
