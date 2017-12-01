@@ -17,6 +17,6 @@
     "**/*.d.ts"
   ],
   "exclude": [
-    "./angularJSApp/**/*"
+    "node_modules/**"
   ]
 }

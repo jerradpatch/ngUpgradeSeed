@@ -6,11 +6,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
   $routeProvider.when('/view1', {
     templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+    controller: 'view1'
   });
   var routes = $routeProvider.routes;
 }])
-
-.controller('View1Ctrl', [function() {
-  var testVar = "this is a test string";
+.controller('view1', [function() {
+  this.testVar = "this is a test string";
 }]);

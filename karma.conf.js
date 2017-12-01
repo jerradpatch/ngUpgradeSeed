@@ -5,6 +5,13 @@ module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular/cli'],
+    files: [
+      './src/angularJSApp/bower_components/angular/angular.js',
+      './src/angularJSApp/bower_components/angular-route/angular-route.js',
+      './src/angularJSApp/bower_components/angular-mocks/angular-mocks.js',
+      './src/angularJSApp/app/**/*.js',
+      './src/app/**/*.ts'
+    ],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -28,6 +35,7 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: true,
+
   });
 };
