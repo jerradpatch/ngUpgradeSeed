@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "angularJSApp/app"
+        "angularJSApp/app",
+        "angularJSApp/bower_components"
       ],
       "index": "index.html",
       "main": "main.ts",

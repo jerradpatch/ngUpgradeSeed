@@ -9,6 +9,6 @@ describe('test-app App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('This is running in Angular2');
+    expect(page.getTitle()).toContain('This is running in Angular2');
   });
 });
