@@ -43,3 +43,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+ag-Grid_Evaluation_License_Key_Not_for_Production_100Devs22_February_2018__MTUxOTI1NzYwMDAwMA==7afb673842c95e7dade2a77ee4a064b6
